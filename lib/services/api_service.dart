@@ -25,15 +25,15 @@ class ApiService {
   // Waitlist form submission
   Future<bool> submitWaitlistForm(WaitlistForm form) async {
     try {
+      // Send to Google Sheets via Apps Script
       final response = await http.post(
-        Uri.parse('$baseUrl/waitlist'),
+        Uri.parse('https://script.google.com/macros/s/AKfycbwNjFF6FMbALLuFV7MvCMpsoOF6UhtVl9_SciLFL-yP6P6wf7UY6Z6dUbW36n8H2jl4/exec'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode(form.toJson()),
       );
-      
-      return response.statusCode == 200 || response.statusCode == 201;
+      return response.statusCode == 200;
     } catch (e) {
-      print('Error submitting waitlist form: $e');
+      print('Error submitting waitlist form to Google Sheets: $e');
       return false;
     }
   }

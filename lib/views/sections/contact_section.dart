@@ -72,7 +72,7 @@ class ContactSection extends StatelessWidget {
                           _ContactMethod(
                             icon: Icons.email,
                             title: 'Email',
-                            value: 'hello@momsbond.com',
+                            value: 'momsbondofficial@gmail.com',
                           ),
                           const SizedBox(height: 24),
                           _ContactMethod(
