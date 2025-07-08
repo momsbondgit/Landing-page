@@ -16,14 +16,37 @@ dependencies:
   url_launcher: ^6.2.1
   flutter_svg: ^2.0.9
   google_fonts: ^6.1.0
+  cached_network_image: ^3.3.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  mockito: ^5.4.2
   flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
   assets:
+    - lib/Assets/image 41.png
+    - lib/Assets/image 39.png
+    - lib/Assets/image 40.png
+    - lib/Assets/image 37-5.png
+    - lib/Assets/image 37-6.png
+    - lib/Assets/image 37.png
+    - lib/Assets/image 38.png
+    - lib/Assets/image 35.png
+    - lib/Assets/image 36.png
+    - lib/Assets/image 37-1.png
+    - lib/Assets/image 37-2.png
+    - lib/Assets/image 37-3.png
+    - lib/Assets/image 37-4.png
+    - lib/Assets/IMG_0904 1.png
+    - lib/Assets/image 25.png
+    - lib/Assets/image 26.png
+    - lib/Assets/image 27.png
+    - lib/Assets/image 28.png
+    - lib/Assets/image 34.png
+    - lib/Assets/0719e7fe-313a-43ee-a332-a1e524954a1f 1.png
+    - lib/Assets/Group 32.png
     - assets/images/
     - assets/icons/ 
