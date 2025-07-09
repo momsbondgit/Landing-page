@@ -23,7 +23,6 @@ class FirebaseService {
       await _firestore.collection(_collectionName).add({
         'email': email,
         'timestamp': FieldValue.serverTimestamp(),
-        'status': 'pending',
       });
 
       return true;
